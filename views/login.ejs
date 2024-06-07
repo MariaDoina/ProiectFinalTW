@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="styles/sign.css" />
+    <link rel="icon" type="image/x-icon" href="images/frontpage/favicon.ico" />
+  </head>
+  <body>
+    <div class="main">
+      <input type="checkbox" id="chk" aria-hidden="true" />
+      <div class="signup">
+        <form method="GET" action="/signup">
+          <label for="chk" aria-hidden="true">SIGN UP</label>
+          <input
+            type="text"
+            id="usernameInput"
+            name="username"
+            placeholder="Username"
+            required
+          />
+          <input type="password" name="pass" placeholder="Password" required />
+          <input type="submit" id="signup-button" value="SING UP" />
+        </form>
+      </div>
+
+      <div class="login">
+        <form method="post" action="login" id="login-form">
+          <label for="chk" aria-hidden="true">Login</label>
+          <input
+            type="text"
+            id="loginUsernameInput"
+            name="username"
+            placeholder="Username"
+            required
+          />
+          <input type="password" name="pass" placeholder="Password" required />
+          <input type="submit" id="login-button" value="LOGIN" />
+        </form>
+      </div>
+    </div>
+
+    <% if (typeof message !== 'undefined') { %>
+    <p class="message success"><%= message %></p>
+    <% } %>
+    <!--  -->
+    <% if (typeof error !== 'undefined') { %>
+    <p class="message error"><%= error %></p>
+    <% } %>
+
+    <script src="/js/login.js"></script>
+  </body>
+</html>

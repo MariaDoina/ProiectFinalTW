@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You love clothes? We do to! Come join us, in our journey to discover your style!"
+    />
+    <meta name="keywords" content="clothes, fashion" />
+    <meta name="author" content="Firtala Maria-Doina" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/fabea48bb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/frontpage/favicon.ico" />
+    <title>ThreadTrove</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <section id="shop_header" class="about-header">
+      <h2>Thank you for buying from us</h2>
+      <p>For more purchases you'll get greater deals!</p>
+    </section>
+
+    <section id="cart">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Remove</td>
+            <td>Image</td>
+            <td>Product</td>
+            <td>Price</td>
+            <td>Quantity</td>
+            <td>Subtotal</td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <a href="#"><i class="fa-regular fa-circle-xmark"></i></a>
+            </td>
+
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/js/index.js" charset="UTF-8"></script>
+  </body>
+</html>

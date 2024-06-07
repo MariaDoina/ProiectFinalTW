@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You love clothes? We do to! Come join us, in our journey to discover your style!"
+    />
+    <meta name="keywords" content="clothes, fashion" />
+    <meta name="author" content="Firtala Maria-Doina" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/fabea48bb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/frontpage/favicon.ico" />
+    <title>ThreadTrove</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <section id="shop_header">
+      <h2>#thread_love</h2>
+      <p>Shop Smart, Shop Easy: Embrace the Power of Online Shopping!</p>
+    </section>
+
+    <section id="menu">
+      <div class="dropdown-menu">
+        <ul>
+          <li>
+            <p>Sort by <i class="fa fa-angle-down"></i></p>
+            <ul class="dropdown">
+              <li><a href="">Reccomended</a></li>
+              <li><a href="">New Arrivals</a></li>
+              <li><a href="">Top Rated</a></li>
+            </ul>
+          </li>
+          <li><a href="">Color</a></li>
+          <li><a href="">Size</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="Product" class="section-p1">
+      <h2>Our Products</h2>
+      <p>Winter collection OFF upto 45%</p>
+
+      <div class="pro-container" id="add-to-cart-button">
+        <div class="pro">
+          <img
+            id="clickable-image"
+            src="images/SHOP/man-black-tshirt.jpg"
+            alt="an image of a men t-shirt"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>T-shirt</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$139</h2>
+          </div>
+          <a href="/sproduct" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/SHOP/hat.jpg" alt="an image of a hat" />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>Hat</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$30</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="images/SHOP/cargo-pants.jpg"
+            alt="an image of cargo pants"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>cargo pants</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$20</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="images/SHOP/men_pants.jpg" alt="an image of a skirt" />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>Men's Pants</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$150</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="images/SHOP/skirt.jpg" alt="an image of a skirt" />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>Skirt</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$70</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="images/SHOP/strawberry-cardigan.jpg"
+            alt="an image of a strawberry-cardigan"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>cardigan</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price"><s>$135</s> $75</h2>
+          </div>
+
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+
+        <div class="pro">
+          <img
+            src="images/SHOP/white-blouse.jpg"
+            alt="an image a white sweater"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>white sweater</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price"><s>$120</s> $66</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/SHOP/pants.jpg" alt="an image of pants" />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>pants</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$94</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="images/SHOP/black-shirt.jpg"
+            alt="an image of a black shirt"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>black shirt</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$70</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="images/SHOP/lime-shirt.jpg"
+            alt="an image of a green colored shirt"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>green shirt</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$65</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/SHOP/men_shoes.jpg" alt="an image of men shoes" />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>Men shoes</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$120</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="more_pages" class="section-p1">
+      <a href="#">1</a>
+      <a href="#">2</a>
+      <a href="#"><i class="fa-solid fa-arrow-right"></i></a>
+    </section>
+
+    <section id="newsletter">
+      <div class="newstext">
+        <h4>Sign up for our newsletter</h4>
+        <p>
+          Get e-mail updates about our latest <span>fashion statements</span>!
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

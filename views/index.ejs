@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You love clothes? We do to! Come join us, in our journey to discover your style!"
+    />
+    <meta name="keywords" content="clothes, fashion" />
+    <meta name="author" content="Firtala Maria-Doina" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/fabea48bb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/frontpage/favicon.ico" />
+    <title>ThreadTrove</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <section id="frontpage">
+      <form>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input
+            class="search_input"
+            type="search"
+            placeholder="Search for products"
+          />
+        </div>
+      </form>
+      <h4>Trade-in-offer</h4>
+      <h1>Summer collection 2024</h1>
+      <p>Save more with coupons & up to 70% off!</p>
+      <form action="/shop"><button id="shop_now">Shop now</button></form>
+    </section>
+
+    <section id="category">
+      <div class="pro-container">
+        <div class="pro">
+          <a href="women-section.html" target="_blank"
+            ><img
+              src="images/frontpage/female.jpg"
+              alt="female manequeen with clothes"
+          /></a>
+          <div class="pro-text"><h3>Women</h3></div>
+        </div>
+        <div class="pro">
+          <a href=""
+            ><img
+              src="images/frontpage/male.jpg"
+              alt="three male manequeen with clothes"
+          /></a>
+          <div class="pro-text"><h3>Men</h3></div>
+        </div>
+        <div class="pro">
+          <a href=""
+            ><img
+              src="images/frontpage/bag.jpg"
+              alt="a close up picture of a bag"
+          /></a>
+          <div class="pro-text"><h3>Accessories</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="discount-news" id="news">
+      <div class="discount-news-box">
+        <div class="discount-news-content">
+          <p>60% discount on all products!</p>
+          <div class="time"><p id="countdown"></p></div>
+        </div>
+        <div class="discount-news-img">
+          <img src="images/frontpage/img-5.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="new">
+      <img
+        src="images/frontpage/camasa.png"
+        alt="picture with clothes and the text coming soon under it"
+      />
+      <p>
+        Sign up to our <a href="">newsletter</a> to be notified when the new
+        collection is released!
+      </p>
+    </section>
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>

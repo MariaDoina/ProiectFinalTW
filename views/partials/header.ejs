@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="nav">
+      <a href="/home"><p id="logo">ThreadTrove</p></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="/home">Home</a></li>
+          <li><a href="/shop">Shop</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+          <li>
+            <i id="user" class="fa-solid fa-user"></i>
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">Hello <%- username %></div>
+                <hr />
+                <a href="/signout" class="sub-menu-link">
+                  <i class="fa-solid fa-right-from-bracket"></i>Logout
+                </a>
+              </div>
+            </div>
+          </li>
+          <li id="lg-bag">
+            <a href="/cart"><i class="fa-solid fa-bag-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div id="mobile">
+        <form>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input
+              class="search_input"
+              type="search"
+              placeholder="Search for products"
+            />
+          </div>
+        </form>
+        <a href="/cart" class="punga">
+          <i
+            class="fa-solid fa-bag-shopping"
+            id="cart-icon"
+            data-quantity="0"
+          ></i>
+        </a>
+        <i id="bar" class="fa-solid fa-bars"></i>
+      </div>
+    </section>
+  </body>
+</html>

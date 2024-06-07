@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You love clothes? We do too! Come join us, in our journey to discover your style!"
+    />
+    <meta name="keywords" content="clothes, fashion" />
+    <meta name="author" content="Firtala Maria-Doina" />
+    <link rel="stylesheet" href="/styles/style.css" />
+    <script
+      src="https://kit.fontawesome.com/fabea48bb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/frontpage/favicon.ico" />
+    <title>ThreadTrove</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <section id="prodetails" class="section-p1">
+      <div class="single-pro-image">
+        <img
+          src="images/SHOP/man-black-tshirt.jpg"
+          alt="blue tshirt for men"
+          width="550"
+          id="mainImage"
+        />
+      </div>
+      <div class="single-pro-details">
+        <h6>Home/ T-Shirt</h6>
+        <h4>Men's Fashion T-Shirt</h4>
+        <h2>$139.00</h2>
+        <div class="small-img-group">
+          <div class="small-img-col">
+            <img
+              src="images/SHOP/man-black-tshirt.jpg"
+              width="150"
+              class="small-img"
+              alt="black t-shirt"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="images/SHOP/man-green-tshirt.jpg"
+              width="150"
+              class="small-img"
+              alt="green t-shirt"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="images/SHOP/man-orange-tshirt.jpg"
+              width="150"
+              class="small-img"
+              alt="orange t-shirt"
+            />
+          </div>
+          <div class="small-img-col">
+            <img
+              src="images/SHOP/man-white-tshirt.jpg"
+              width="150"
+              class="small-img"
+              alt="white t-shirt"
+            />
+          </div>
+        </div>
+        <select>
+          <option>Select size</option>
+          <option>XXL</option>
+          <option>XL</option>
+          <option>L</option>
+          <option>M</option>
+          <option>S</option>
+        </select>
+
+        <input type="number" value="1" />
+        <button id="addToCartButton" class="normal">Add To Cart</button>
+        <h4>Product Details</h4>
+        <span>
+          Made from 100% high-quality cotton, this t-shirt offers a soft,
+          breathable, and lightweight feel that is perfect for all-day comfort.
+          Tailored to provide a relaxed yet flattering fit, suitable for various
+          body types. Available in a range of sizes from S to XXL. Reinforced
+          stitching and high-quality fabric ensure that the t-shirt retains its
+          shape and color, even after multiple washes.</span
+        >
+      </div>
+    </section>
+
+    <section id="Product" class="section-p1">
+      <h2 class="featured">FEATURED PRODUCTS</h2>
+      <div class="pro-container">
+        <div class="pro">
+          <img
+            src="images/SHOP/man-black-tshirt.jpg"
+            alt="an image of a men t-shirt"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>T-shirt</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$70</h2>
+          </div>
+          <a href="/product" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img src="images/SHOP/hat.jpg" alt="an image of a hat" />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>Hat</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$30</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+        <div class="pro">
+          <img
+            src="images/SHOP/cargo-pants.jpg"
+            alt="an image of cargo pants"
+          />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>cargo pants</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$20</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+
+        <div class="pro">
+          <img src="images/SHOP/men_pants.jpg" alt="an image of a skirt" />
+          <div class="des">
+            <span>ThreadThrove</span>
+            <h3>Men's Pants</h3>
+            <div class="star">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <h2 class="price">$150</h2>
+          </div>
+          <a href="#" class="cart"><i class="fa fa-cart-plus"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="comments">
+      <h2>See what other people think of this product</h2>
+      <ul id="comments-list">
+        <% comments.forEach(comment => { %>
+        <li>
+          <div class="comment-header">
+            <p>
+              <strong><%= comment.name %></strong>
+              <span class="star">
+                <% if (comment.name === "user2") { %>
+                <i class="fa fa-star b"></i>
+                <i class="fa fa-star a"></i>
+                <i class="fa fa-star a"></i>
+                <i class="fa fa-star a"></i>
+                <i class="fa fa-star a"></i>
+                <% } else { %>
+                <i class="fa fa-star b"></i>
+                <i class="fa fa-star b"></i>
+                <i class="fa fa-star b"></i>
+                <i class="fa fa-star b"></i>
+                <i class="fa fa-star b"></i>
+                <% } %>
+              </span>
+            </p>
+            <i class="fa-regular fa-circle-xmark"></i>
+          </div>
+          <p><%= comment.comment %></p>
+        </li>
+
+        <% }); %>
+      </ul>
+    </section>
+
+    <section id="newsletter">
+      <div class="newstext">
+        <h4>Sign up for our newsletter</h4>
+        <p>
+          Get e-mail updates about our latest <span>fashion statements</span>!
+        </p>
+      </div>
+      <div class="form">
+        <input type="text" placeholder="Your email address" />
+        <button class="normal">Sign Up</button>
+      </div>
+    </section>
+
+    <div id="popupMessage" class="popup-message">Added to cart!</div>
+    <%- include('./partials/footer.ejs') %>
+    <script src="/js/index.js"></script>
+  </body>
+</html>

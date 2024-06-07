@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="You love clothes? We do to! Come join us, in our journey to discover your style!"
+    />
+    <meta name="keywords" content="clothes, fashion" />
+    <meta name="author" content="Firtala Maria-Doina" />
+    <link rel="stylesheet" href="styles/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/fabea48bb1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Spartan"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="images/frontpage/favicon.ico" />
+    <title>ThreadTrove</title>
+  </head>
+  <body>
+    <%- include('./partials/header.ejs') %>
+
+    <section id="shop_header" class="about-header">
+      <h2>Get to know us.</h2>
+      <p>Find out what makes us unique.</p>
+    </section>
+
+    <div class="container">
+      <section class="about">
+        <div class="about-image">
+          <img src="images/about/about.jpg" alt="image of a laptop" />
+        </div>
+        <div class="about-content">
+          <h3>
+            As a company passionate about fashion, we understand and resonate
+            deeply with your perspective.
+          </h3>
+          <p>
+            Fashion, to us, is not merely about selling clothes; it's about
+            empowering individuals to express themselves authentically and
+            artistically. We see fashion as a medium through which people can
+            narrate their stories, project their unique personalities, and
+            inspire others.
+          </p>
+          <p>
+            Our commitment lies in curating collections that not only reflect
+            the latest trends but also embrace the diversity of individual
+            styles. We believe in offering a platform where creativity knows no
+            bounds, where textures, colors, and designs come together to form a
+            symphony of self-expression.
+          </p>
+          <a href="" class="read-more">Read More</a>
+        </div>
+      </section>
+    </div>
+
+    <section id="moving-text-container">
+      <p id="moving-text">
+        Our passion for fashion fuels every design choice we make. With
+        meticulous attention to detail, we create clothing that empowers and
+        inspires.
+      </p>
+    </section>
+
+    <%- include('./partials/footer.ejs') %>
+
+    <script src="/js/index.js"></script>
+  </body>
+</html>
